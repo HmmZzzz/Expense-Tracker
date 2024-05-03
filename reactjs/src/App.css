@@ -1,0 +1,134 @@
+ /* App.css */
+
+  /* Reset CSS */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Màu nền dịu mát */
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #007bff; /* Màu sắc header */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+  }
+
+  header:hover {
+    background-color: #0056b3; /* Màu sắc khi di chuột qua */
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  section {
+    background-color: #fff; /* Màu nền box section */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+  }
+
+  section:hover {
+    transform: scale(1.02); /* Phóng to khi hover */
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    color: #007bff; /* Màu sắc tiêu đề */
+    transition: color 0.3s ease; /* Hiệu ứng màu chữ */
+  }
+
+  h2:hover {
+    color: #0056b3; /* Màu sắc khi di chuột qua */
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+  .total {
+    text-align: center;
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .total:hover {
+    background-color: #e0e0e0; /* Màu sắc khi di chuột qua */
+  }
+
+  .total h2 {
+    margin-bottom: 20px;
+    color: #0056b3; /* Màu sắc tiêu đề */
+    transition: color 0.3s ease; /* Hiệu ứng màu chữ */
+  }
+
+  .total h2:last-child {
+    margin-bottom: 0;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+  }
+
+  form select,
+  form input[type="number"],
+  form input[type="date"],
+  form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Màu nền form */
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+  }
+
+  form select:focus,
+  form input[type="number"]:focus,
+  form input[type="date"]:focus,
+  form button:focus {
+    outline: none; /* Loại bỏ viền khi focus */
+  }
+
+  form button {
+    background-color: #007bff; /* Màu sắc nút */
+    color: #fff;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #0056b3; /* Màu sắc khi di chuột qua */
+  }
